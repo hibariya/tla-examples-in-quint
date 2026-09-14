@@ -1,0 +1,5 @@
+# Quint / Apalache output
+_apalache-out/
+
+# Node dependencies, if Quint is installed locally
+node_modules/
