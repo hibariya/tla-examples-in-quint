@@ -83,6 +83,9 @@ module coffeecan {
     (can.white % 2 != 0) implies eventually(can.black == 0 and can.white == 1),
   }
 
+  // step.weakFair(Set(can)): If a step that changes `can` remains continuously possible, eventually such a step must occur.
+  // - `Set(can)` = “use `can` to determine whether progress occurred”
+  // - `weakFair` = “don’t postpone possible progress forever”
   temporal theorem = step.weakFair(Set(can)) implies and {
     eventuallyTerminates,
     terminationHypothesis,
