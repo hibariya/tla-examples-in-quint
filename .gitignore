@@ -5,3 +5,5 @@ _apalache-out/
 node_modules/
 
 *.tla
+
+/Examples
