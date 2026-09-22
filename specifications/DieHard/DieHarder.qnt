@@ -1,4 +1,5 @@
 // quint verify DieHarder.qnt --backend tlc --main=dieharder259 --invariants typeOK notSolved
+// expect: counterexample
 module dieharder {
   type Jug = str
   const jugs: Set[jug]

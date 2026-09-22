@@ -21,3 +21,13 @@ Type-check a specification:
 
 ```sh
 quint typecheck specifications/ReadersWriters/ReadersWriters.qnt
+```
+
+Verify every specification using the command at the top of each `.qnt` file:
+
+```sh
+python3 scripts/verify.py
+```
+
+The DieHard examples intentionally find a solution by checking `notSolved`.
+Their `// expect: counterexample` comments tell the runner to require that result.

@@ -1,4 +1,5 @@
 // quint verify DieHard.qnt --backend tlc --invariants typeOK notSolved
+// expect: counterexample
 module diehard {
   var big: int
   var small: int
